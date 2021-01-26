@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="console.log(fnSayHello())" id="clickme">눌러봐</button>
+    <button onclick="alert(fnPlusNumber(3,5))">3+5=?</button>
+    <button onclick="console.log(fnMinusNumbers(3,5))">3-5=?</button>
+
+    <script>
+      function fnSayHello() {
+        // document.getElementById("clickme").innerHTML = "키득";
+        document.querySelector("clickme").innerHTML = "안녕하세요!";
+        return "hi";
+      }
+      function fnPlusNumber(a, b) {
+        return a + b;
+      }
+      function fnMinusNumbers(a, b) {
+        return a - b;
+      }
+    </script>
+  </body>
+</html>
